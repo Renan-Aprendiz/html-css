@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: rgb(167, 166, 166);
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            align-content: center;
+            border: 3px solid black;
+            margin: 15px;
+        }
+        div:hover {
+            background-color: antiquewhite;
+            width: 115px;
+            height: 115px;
+        }
+        div > .teste {
+            display: none;
+        }
+        div:hover > .teste {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de troca de cor e tamanho com "hover"</h1>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    <h1>Exemplo de texto escondido</h1>
+    <div>
+        <p>Passe o mouse por cima!</p>
+        <p class="teste">Achouuu!</p>
+    </div>
+</body>
+</html>
